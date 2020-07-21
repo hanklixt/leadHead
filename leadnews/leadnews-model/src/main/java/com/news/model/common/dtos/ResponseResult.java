@@ -27,6 +27,7 @@ public class ResponseResult<T> implements Serializable {
         this.data = data;
     }
 
+
     public ResponseResult(Integer code, String msg, T data) {
         this.code = code;
         this.errorMessage = msg;

@@ -13,6 +13,7 @@
         <module>leadnews-utils</module>
         <module>leadnews-apis</module>
         <module>leadnews-model</module>
+        <module>leadnews-article</module>
     </modules>
 
     <!-- 继承Spring boot工程 -->
@@ -171,11 +172,11 @@
                 <artifactId>mybatis-spring</artifactId>
                 <version>${mybatis.spring.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.github.pagehelper</groupId>
-                <artifactId>pagehelper-spring-boot-starter</artifactId>
-                <version>${pagehelper.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.github.pagehelper</groupId>-->
+<!--                <artifactId>pagehelper-spring-boot-starter</artifactId>-->
+<!--                <version>${pagehelper.version}</version>-->
+<!--            </dependency>-->
             <!-- jsoup -->
             <dependency>
                 <groupId>org.jsoup</groupId>
@@ -338,24 +339,24 @@
                     <useDefaultDelimiters>true</useDefaultDelimiters>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>pl.project13.maven</groupId>
-                <artifactId>git-commit-id-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>revision</goal>
-                        </goals>
-                    </execution>
-                </executions><!--$NO-MVN-MAN-VER$-->
-                <configuration>
-                    <dotGitDirectory>../../.git</dotGitDirectory>
-                    <dateFormat>yyyy-MM-dd HH:mm:ss</dateFormat>
-                    <useNativeGit>true</useNativeGit>
-                    <abbrevLength>8</abbrevLength>
-                    <generateGitPropertiesFile>true</generateGitPropertiesFile>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>pl.project13.maven</groupId>-->
+<!--                <artifactId>git-commit-id-plugin</artifactId>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>revision</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>&lt;!&ndash;$NO-MVN-MAN-VER$&ndash;&gt;-->
+<!--                <configuration>-->
+<!--                    <dotGitDirectory>E:\2020_project\leadHead\git</dotGitDirectory>-->
+<!--                    <dateFormat>yyyy-MM-dd HH:mm:ss</dateFormat>-->
+<!--                    <useNativeGit>true</useNativeGit>-->
+<!--                    <abbrevLength>8</abbrevLength>-->
+<!--                    <generateGitPropertiesFile>true</generateGitPropertiesFile>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <!-- PMD插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
